@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz dia dos Namorados</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+/>
+
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="" width="50px">
+        </div>
+        <nav>
+            <a href="#">Inicío</a>
+            <a href="#">Séries</a>
+            <a href="#">Filmes</a>
+            <a href="#">Minha Lista</a>
+        </nav>
+
+    </header>
+
+    <section class="banner">
+        <div class="conteudo">
+            <p class="titulo">
+                João Victor e Maria Luiza
+            </p>
+            <p class="detalhes">
+                <span>
+                    12 DE JUNHO, 4 TEMPORADAS
+                </span>
+                <span class="stars">
+                    <i class="fa-solid fa-star" style="color: rgb(209, 40, 55);"></i>
+                    <i class="fa-solid fa-star" style="color: rgb(209, 40, 55);"></i>
+                    <i class="fa-solid fa-star" style="color: rgb(209, 40, 55);"></i>
+                    <i class="fa-solid fa-star" style="color: rgb(209, 40, 55);"></i>
+                    <i class="fa-solid fa-star" style="color: rgb(209, 40, 55);"></i>
+                </span>
+                <p class="descricao">
+                    Quando me sinto só
+                    Te faço mais presente
+                    Eu fecho os meus olhos
+                    E enxergo a gente
+                    Em questão de segundos
+                    Voo pra outro mundo
+                    Outra constelação
+                    Não dá para explicar
+                    Ao ver você chegando
+                    Qual a sensação
+                    A gente não precisa 'tar colado pra 'tar junto
+                    Os nossos corpos se conversam por horas e horas
+                    Sem palavras 'tão dizendo a todo instante um pro outro
+                    O quanto se adoram
+                    Eu não preciso te olhar
+                    Pra te ter em meu mundo
+                    Porque aonde quer que eu vá
+                    Você está em tudo
+                    Tudo, tudo que eu preciso, 
+                    Te vivo
+                </p>
+                <div class="botoes">
+                    <button><i class="fa-solid fa-play" style="color: rgb(0, 0, 0);"></i>Continuar</button>
+                    <button><i class="fa-solid fa-star" style="color: rgb(0, 0, 0);"></i> Favorito</button>
+                </div>
+            </p>
+        </div>
+
+    </section>
+
+    <section class="momentos">
+        <h2>Nossos Melhores Momentos</h2>
+
+        <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="./fotos/img-1.jpeg"></div>
+            <div class="swiper-slide"><img src="./fotos/img-3.jpeg"></div>
+            <div class="swiper-slide"><img src="./fotos/img-4.jpeg"></div>
+            <div class="swiper-slide"><img src="./fotos/img-5.jpeg"></div>
+            <div class="swiper-slide"><img src="./fotos/img-6.jpeg"></div>
+            <div class="swiper-slide"><img src="./fotos/img-7.jpeg"></div>
+            <div class="swiper-slide"><img src="./fotos/img-1.jpeg"></div>
+            <div class="swiper-slide"><img src="./fotos/img-3.jpeg"></div>
+            <div class="swiper-slide"><img src="./fotos/img-4.jpeg"></div>
+            
+            
+        </div>
+
+        </div>
+    </section>
+
+    <footer>
+        2026 - Maria Luiza
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        loop: true,
+        autoplay:{
+            delay:2500,
+            disableOnInterection:false,
+        },
+        slidesPerView:2,
+        spaceBetween:10,
+        loop:true,
+        breakpoints:{
+            600: {
+                loop: true,
+                slidesPerView: 3,
+                spaceBetween: 15, 
+            },
+            900: {
+                 loop: true,
+                slidesPerView: 4,
+                spaceBetween: 40,
+            }
+        }
+        },);
+    </script>
+</body>
+</html>
